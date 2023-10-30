@@ -99,11 +99,6 @@
             </div>
           </div>
           </form>
-        </main>
-          <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <button type="submit" class="formulario__btn" onclick="resetForm()">ENVIAR</button>
-          </div>
-
     <script>
         function resetForm() {
             document.getElementById("formulario").reset(); // Restablecer el formulario
@@ -120,26 +115,10 @@
             document.getElementById("pedidoActual").appendChild(listItem);
           }
     </script>
-    <footer>
-        <div class="container grid-3">
-          <div class="copyright">
-            <h1>UNIKAS</h1>
-          </div>
-          <nav class="links">
-            <ul>
-              <li><a href="index.html" class="outline">Inicio</a></li>
-              <li><a href="productos.html" class="outline">Productos</a></li>
-              <li><a href="empresa.html" class="outline">Empresa</a></li>
-            </ul>
-          </nav>
-          <div class="profiles">
-            <a href=""><em class="fab fa-twitter fa-2x"></em></a>
-            <a href=""><em class="fab fa-instagram fa-2x"></em></a>
-            <a href=""><em class="fab fa-facebook fa-2x"></em></a>
-            <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
-          </div>
-        </div>
-      </footer>
+    </main>
+    <div class="formulario__grupo formulario__grupo-btn-enviar">
+      <button type="submit" class="formulario__btn" onclick="resetForm()">ENVIAR</button>
+    </div>
     <script src="js/formulario.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
