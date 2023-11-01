@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIKAS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <img src="./img/logo.png" class="logo" alt="logo">
+            <nav>
+              <ul>
+                <li class="nav"><a class="outline" href="index.html">INICIO</a></li>
+                <li class="nav"><a href="productos.html" class="outline">PRODUCTOS</a></li>
+                <li class="nav"><a href="empresa.html" class="outline">EMPRESA</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+      <section class="showcase">
+        <div class="container">
+            <div class="grid">
+              <div class="grid-item-1">
+                <div class="showcase-text">
+                  <h1 class="titulo">NUESTROS PRODUCTOS AL ALCANCE DE TU MANO</h1>
+                  <p class="supporting-text"> Completa el formulario y hacenos tu pedido </p>
+                  <div class="image3">
+                    <img src="./img/formulario.png">
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item-2">
+                <div class="image">
+                  <img src="./img/productos.png" alt="">
+                </div>
+              </div>
+           </div>
+
+        </div>
+    </section>
+
+    <main>
+        <h1 class="titform">UNIKAS</h1>
+        <h3 class="subtitulo">UN SABOR DISTINTO PARA LOS PALADARES MAS EXIGENTES</h3>
+        
+        <form action="procesar_formulario.php" class="formulario" id="formulario">
+          <!-- Grupo: Nombre -->
+          <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label" id="label1">NOMBRE COMPLETO</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="LUZ STRICKLER">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El usuario solo puede contener letras</p>
+          </div>
+    
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label" id="label4">CORREO ELECTRONICO</label>
+            <div class="formulario__grupo-input">
+              <input type="email" class="formulario__input" name="correo" id="correo" placeholder="LUZSTRICKLER@GMAIL.COM">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+    
+          <!-- Grupo: Direccion -->
+          <div class="formulario__grupo" id="grupo__direccion">
+            <label for="direccion" class="formulario__label" id="label3">DIRECCION DE ENVIO</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="CARACAS 42">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La dirección solo puede contener letras y numeros</p>
+          </div>
+    
+          <!-- Grupo: Telefono -->
+          <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label" id="label4">NUMERO DE TELEFONO</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3541 215491" maxlength="14">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El numero de telefono tiene que ser de 10 a 14 digitos y solo puede contener numeros</p>
+          </div>
+
+          <!-- Grupo: Productos -->
+          <div class="formulario__grupo" id="grupo__productos">
+            <label for="producto" class="formulario__label" id="label4">QUE PRODUCTOS DESEA LLEVAR?</label>
+          <select class="formulario__input" style="background-color: rgb(182, 20, 20);color: white" id="producto">
+            <option style="color: white;" value="Papas fritas80">Papa x 80gr</option>
+            <option style="color: white;" value="Papas fritas180">Papa x 180gr</option>
+            <option style="color: white;" value="Papas fritas1">Papa x 1kg</option>
+            <option style="color: white;" value="Palito Salado70">Palito Salado x 70gr</option>
+            <option style="color: white;" value="Palito Salado180">Palito Salado x 180gr</option>
+            <option style="color: white;" value="Palito Salado15">Palito Salado x 1.5kg</option>
+            <option style="color: white;" value="Palito Maiz60">Palito de Maiz x 60gr</option>
+            <option style="color: white;" value="Palito Maiz180">Palito de Maiz x 180gr</option>
+            <option style="color: white;" value="Palito Maiz1">Palito de Maiz x 1kg</option>
+            <option style="color: white;" value="Pochoclo40">Pochoclo Salado x 40gr</option>
+            <option style="color: white;" value="Pochoclo400">Pochoclo Salado x 400gr</option>
+            <option style="color: white;" value="Saladitas">Saladitas x 1kg</option>
+            <option style="color: white;" value="Mani Tostado130">Mani Tostado x 130gr</option>
+            <option style="color: white;" value="Mani Tostado900">Mani Tostado x 900gr</option>
+            <option style="color: white;" value="Mani Tostado3">Mani Tostado x 3kg</option>
+            <option style="color: white;" value="Mani Cascara250">Mani con Cascara x 250gr</option>
+            <option style="color: white;" value="Mani Cascara3">Mani con Cascara x 3kg</option>
+            <option style="color: white;" value="Mani Salado130">Mani Salado x 130gr</option>
+            <option style="color: white;" value="Mani Salado900">Mani Salado x 900gr</option>
+            <option style="color: white;" value="Mani Salado3">Mani Salado x 3kg</option>
+            <option style="color: white;" value="Mani Saborizado130">Mani Saborizado x 130gr</option>
+            <option style="color: white;" value="Mani Saborizado900">Mani Saborizado x 900gr</option>
+            <option style="color: white;" value="Mani Saborizado3">Mani Saborizado x 3kg</option>
+            <option style="color: white;" value="Maiz">Maiz Picingallo x400gr</option>
+            <option style="color: white;" value="Empanadita180">Empanadita x 180gr</option>
+            <option style="color: white;" value="Empanadita1">Empanadita x 1kg</option>
+            <option style="color: white;" value="Conyto100">Conyto x 100gr</option>
+            <option style="color: white;" value="Conyto500">Conyto x 500gr</option>
+            <option style="color: white;" value="Conyto1">Conyto x 1kg</option>
+            <option style="color: white;" value="Nachos">Nachos x 1kg</option>
+            <option style="color: white;" value="Cascarones">Cascarones x 1kg</option>
+        </select><br><br>
+
+          <label for="cantidad" class="formulario__label" id="label4">SELECCIONE UNA CANTIDAD</label>
+          <input type="number" class="formulario__input" style="background-color: rgb(182, 20, 20);color: white;" id="cantidad" min="1" required><br><br>
+  
+          <button type="button" onclick="agregarProducto()" class="formulario__btn">Agregar al Carrito</button>
+      </form>
+      <h2 class="formulario__label" id="label4">Pedido Actual</h2>
+      <ul style="color:rgb(182, 20, 20) ;" id="pedidoActual"></ul>
+      <script>
+          function agregarProducto() {
+              var producto = document.getElementById("producto").value;
+              var cantidad = document.getElementById("cantidad").value;
+  
+              var listItem = document.createElement("li");
+              listItem.appendChild(document.createTextNode(" Producto: " + producto + " - Cantidad: " + cantidad));
+  
+              document.getElementById("pedidoActual").appendChild(listItem);
+  
+          }
+      </script>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn" onclick="resetForm()">ENVIAR</button>
+        </div>
+        <script>
+          function resetForm() {
+            document.getElementById("formulario").reset(); // Restablecer el formulario
+            document.getElementById("pedidoActual").innerHTML = ""; // Borrar el pedido actual
+          }
+        
+          function agregarProducto() {
+            var producto = document.getElementById("producto").value;
+            var cantidad = document.getElementById("cantidad").value;
+        
+            var listItem = document.createElement("li");
+            listItem.appendChild(document.createTextNode(" Producto: " + producto + " - Cantidad: " + cantidad));
+        
+            document.getElementById("pedidoActual").appendChild(listItem);
+          }
+        </script>
+       
+	</main>
+
+	<script src="js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
